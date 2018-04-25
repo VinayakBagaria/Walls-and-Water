@@ -29,7 +29,6 @@ body {
 }
 
 .block {
-  width: 400px;
   border-left: 1px solid #888;
   border-bottom: 1px solid #888;
 }

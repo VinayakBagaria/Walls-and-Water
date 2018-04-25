@@ -40,6 +40,8 @@ get the max bar length from the original array via spread operator shorthand
   let container = '';
   // total water units value
   let waterUnits = 0;
+  // width of each bar
+  const width = 80 / values.length;
 
   for (let i = 0; i < values.length; i++) {
     // get the water level above 'i'th bar
@@ -48,9 +50,12 @@ get the max bar length from the original array via spread operator shorthand
     waterUnits += wu;
 
     // a block represents 1 column
-    container += `<div class="block">`;
+    container += `
+        <div class="block"
+              style="width: ${width}vw">
+    `;
     // empty space calculation
-    for (let j = 0; j < maxBar - values[i] - wu; j++) {
+    for (let j = 0; j < maxBar - values[i] - wu + 1; j++) {
       container += `
                 <div class="remaining"></div>
             `;
