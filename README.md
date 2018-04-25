@@ -9,4 +9,4 @@ Preview on [codepen here](https://codepen.io/VinayakBagaria/pen/MGyxpw).
 # Usage
 
 * `git clone https://github.com/VinayakBagaria/Walls-and-Water`
-* Just open index.html - No installations.
+* Just open `index.html` - No installations.
